@@ -68,6 +68,10 @@ html {
   margin: 0 auto;
   padding-right: 10%;
   padding-left: 10%;
+  width: 100%;
+
+  position: absolute;
+  top: 0;
 
   ul.links {
 
@@ -114,7 +118,8 @@ html {
 div#main {
 
   background: $backgroundgray;
-
+  position: relative;
+  
   div#content {
 
     background: white;

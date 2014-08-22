@@ -73,6 +73,9 @@ html {
   position: absolute;
   top: 0;
 
+  padding-right: 0 !important;
+  padding-left: 0 !important;
+
   ul.links {
 
       width: 100%;
@@ -84,6 +87,11 @@ html {
         height: 48px;
         padding: 0 0;
         margin: 0 0;
+
+        @include breakpoint($breakpoint-small-width) {
+          display: block;
+          width: 100%;
+        }
 
         a {
           color: gray;
@@ -103,6 +111,7 @@ html {
 
           @include breakpoint($breakpoint-small-width) {
             font-size: 1em;
+            display: block;
           }
 
           &:hover {
@@ -121,7 +130,7 @@ div#main {
   position: relative;
 
   @include breakpoint($breakpoint-small-width) {
-    padding-top: 3em;
+    padding-top: 200px;
   }
   
   div#content {

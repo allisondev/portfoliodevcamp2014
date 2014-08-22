@@ -119,6 +119,10 @@ div#main {
 
   background: $backgroundgray;
   position: relative;
+
+  @include breakpoint($breakpoint-small-width) {
+    padding-top: 3em;
+  }
   
   div#content {
 
@@ -132,9 +136,9 @@ div#main {
     border-radius: $border-radius;
 
     @include breakpoint($breakpoint-small-width) {
-      margin-right: 2.5%;
-      margin-right: 2.5%;
-      width: 95%;
+      margin-left: 5%;
+      margin-right: 5%;
+      width: 90%;
     }
 
     h2 {
